@@ -5,17 +5,17 @@ import cyclarity_sdk.sdk_models.findings.types as PTFindingTypes
 
 
 class MyRunResult(BaseResultsModel):
-    #define out params
+    # Define output parameters
     res: str = ""
 
 
 class MyRunnable(Runnable[MyRunResult]):
-    #define in params 
+    # Define input parameters
     input_int: int = 100
 
     def setup(self):
         self.logger.info("SETUP before running")
-        self.platform_api.send_test_report_description("My test description")
+        # Do any setup operations here
 
     def run(self, *args, **kwargs):
         self.logger.info("RUNNING")

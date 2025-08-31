@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-cyclarity-sdk = "^1.0.55"
+cyclarity-sdk = "^1.0.91"
 
 
 [build-system]
