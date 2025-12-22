@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "device-data-getter-cloud"
+version = "0.1.0"
+description = "CyClarity demo runnable component: device data getter (cloud)"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "device_data_getter_cloud" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cyclarity-sdk = ">=1.0.89"
+
+[tool.poetry.scripts]
+device-data-getter-cloud = "device_data_getter_cloud.runnable:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
